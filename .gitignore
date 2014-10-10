@@ -1,0 +1,9 @@
+env/
+.DS_Store
+cache/
+#Custom
+output/
+plugins/
+themes/
+*.pid
+*~
