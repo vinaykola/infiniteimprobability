@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'vinaykola'
 SITENAME = u'infiniteimprobability'
-SITEURL = ''
+SITEURL = 'http://vinaykola.com'
 
 PATH = 'content'
 
@@ -20,14 +20,20 @@ TRANSLATION_FEED_ATOM = None
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
          ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+         ('Jinja2', 'http://jinja.pocoo.org/'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('twitter', 'http://twitter.com/vinaykola'),
+          ('github', 'http://github.com/vinaykola'),
+          ('linkedin', 'http://linkedin.com/in/vinaykola'))
 
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+STATIC_PATHS = ['extras/vinaykola_resume.pdf']
+
+EXTRA_PATH_METADATA = {
+    'extras/vinaykola_resume.pdf': {'path': 'vinaykola_resume.pdf'}
+}
