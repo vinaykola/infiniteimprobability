@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'vinaykola'
-SITENAME = u'infiniteimprobability'
-SITEURL = 'http://vinaykola.com'
+AUTHOR = u'Vinay Kola'
+SITENAME = u'Infinite Improbability'
+SITEURL = ''
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'America/Los_Angeles'
 
 DEFAULT_LANG = u'en'
 
@@ -16,24 +16,21 @@ DEFAULT_LANG = u'en'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),)
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/vinaykola'),
           ('github', 'http://github.com/vinaykola'),
           ('linkedin', 'http://linkedin.com/in/vinaykola'))
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 10
+
+THEME = 'themes/pelican-svbhack'
+
+TAGLINE = 'Infinite Improbability • Musings about life and programming • Work @ Snapchat'
+
+USER_LOGO_URL = SITEURL + '/images/vinaykola.png'
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
-STATIC_PATHS = ['extras/vinaykola_resume.pdf']
-
-EXTRA_PATH_METADATA = {
-    'extras/vinaykola_resume.pdf': {'path': 'vinaykola_resume.pdf'}
-}
+RELATIVE_URLS = True
